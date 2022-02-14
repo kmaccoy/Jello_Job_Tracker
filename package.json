@@ -1,0 +1,52 @@
+{
+  "name": "job-tracker-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack serve --open\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Eevee/Job-Tracker-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Eevee/Job-Tracker-App/issues"
+  },
+  "homepage": "https://github.com/Code-Eevee/Job-Tracker-App#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
